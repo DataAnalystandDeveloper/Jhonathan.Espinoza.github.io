@@ -21,11 +21,11 @@
     }
     #experience,
     .experience-details-container {
-    margin-top: 2rem;
+    margin-top: 1rem;
     }
     #profile,
     .section-container {
-    display: block;
+    display: flex;
     }
     .arrow {
     display: none;
@@ -66,7 +66,14 @@
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
-    flex-wrap: wrap;
+        flex-direction: row; /* Stack the items vertically on smaller screens */
+        align-items: center; /* Optionally center the items */
+    }
+
+    .about-pic {
+        /* Adjust size, e.g., change width or scale */
+        width: 80%;  /* Adjust width */
+        font-size: 14px; /* Adjust font size if needed */
     }
     .contact-info-container {
     margin: 0;
@@ -88,7 +95,7 @@
     }
     .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 30vw;
     justify-content: center;
     }
     .section__text__p2 {
@@ -98,6 +105,7 @@
     font-size: 2rem;
     }
     .text-container {
-    text-align: justify;
+    text-align: center;
+    font-size: 1rem;
     }
 }
